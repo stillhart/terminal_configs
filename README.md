@@ -1,4 +1,8 @@
 
+# MY terminal configs
+
+This repo is super duper extremly opinionated. 
+
 # get started
 
 ```
