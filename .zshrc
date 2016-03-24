@@ -3,6 +3,7 @@
 # should contain commands to set up aliases, functions,
 # options, key bindings, etc.
 #
+source $ZSH/oh-my-zsh.sh
 
 ## shell functions
 #setenv() { export $1=$2 }  # csh compatibility
@@ -137,7 +138,9 @@ plugins=(git rails ruby git-prompt gitfast)
 
 # export MANPATH="/usr/local/man:$MANPATH"
 
-source $ZSH/oh-my-zsh.sh
+#if $ZSH; then
+#  source $ZSH/oh-my-zsh.sh
+#fi
 
 # You may need to manually set your language environment
 # export LANG=en_US.UTF-8
@@ -176,6 +179,8 @@ pwdmaxlen=23
 ##
 #
 
+setopt prompt_subst
+
 unset RPROMPT
 #PROMPT='[%n@%m]%~%# '    # default prompt
 
@@ -211,6 +216,7 @@ function _host() {
     echo "$fg[blue]%m$reset_color"
   fi
 }
+
 
 
 #3 folders depth 
