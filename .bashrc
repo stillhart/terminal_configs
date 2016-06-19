@@ -4,21 +4,13 @@ alias ll='ls -lh'
 alias la='ls -lAhF'
 alias lr='la -rt'
 alias vi='vim'
-alias view='vi -R'
 alias ..='cd ..'
 alias -- -='cd -'
-alias -g L='| less'
-alias -g WC='| wc'
-alias -g G='| grep'
 
 #git aliases
-alias gs="git status | ${(z)GIT_PAGER}"
+alias gs="git status"
 alias gc="git commit -m"
-alias gl="git log --decorate"
-alias gd="git diff"
 alias ga="git add -p"
-alias deploy_to_stage="bundle exec cap staging deploy"
-alias deploy_to_production="bundle exec cap production deploy"
 
 #rails aliases
 alias be='bundle exec'
