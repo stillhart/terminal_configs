@@ -3,7 +3,7 @@
 # should contain commands to set up aliases, functions,
 # options, key bindings, etc.
 #
-source $ZSH/oh-my-zsh.sh
+source $HOME + "/.oh-my-zsh/oh-my-zsh.sh"
 
 ## shell functions
 #setenv() { export $1=$2 }  # csh compatibility
@@ -56,7 +56,7 @@ setopt HIST_NO_STORE # don't store the 'history' command
 setopt HIST_SAVE_NO_DUPS # don't save duplicates to the history file
 setopt HIST_EXPIRE_DUPS_FIRST # forget duplicates first if the internal (running) history gets too large
 #### MAKES SHELL INCREDIBLE SLOW OVER GLUSTERNFS!!
-#setopt HIST_FCNTL_LOCK # better performance if history file is stored over NFS
+setopt HIST_FCNTL_LOCK # better performance if history file is stored over NFS
 setopt CORRECT # correct misspelled commands
 
 
