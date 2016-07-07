@@ -53,4 +53,5 @@ ln -s ../../terminal_configs/fish/functions/mux.fish mux.fish
 ln -s ../../terminal_configs/fish/functions/tmux0.fish tmux0.fish 
 ln -s ../../terminal_configs/fish/functions/tmux1.fish tmux1.fish
 ln -s ../../terminal_configs/fish/functions/vi.fish vi.fish
+ln -s ../../terminal_configs/fish/functions/audit.fish audit.fish
 ```
