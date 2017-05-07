@@ -7,5 +7,4 @@ set number
 set paste
 set mouse=a
 
-# ?
 set cursorline 
